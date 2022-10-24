@@ -5,7 +5,7 @@ const Leftsidenave = () => {
     const [catagoris,setcatagoris]=useState([])
 
     useEffect(()=>{
-        fetch('http://localhost:5000/news-category')
+        fetch('https://deagon-news-server-alif202020.vercel.app/news-category')
         .then(res=>res.json())
         .then(data=>setcatagoris(data))
     },[])

@@ -19,13 +19,13 @@ const Newssummery = (props) => {
                            ></Image>
                         </div>
                         <div className='mx-3'>
-                                    <p className='mb-0'>{author.name}</p>
-                                    <p>{author.published_date}</p>
+                                    <p className='mb-0'>{author.name? author.name :<p>Not found</p>}</p>
+                                    <p>{author.published_date?author.published_date:<p>Not found</p>}</p>
                         </div>               
                      </div>
                      <div>
-                        <FaShareAlt></FaShareAlt>
-                        <FaBookmark></FaBookmark>
+                        <FaShareAlt className='fs-4'></FaShareAlt>
+                        <FaBookmark className='ms-3 fs-4'></FaBookmark>
                      </div>
 
                                 

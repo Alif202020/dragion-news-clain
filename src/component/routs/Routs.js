@@ -17,17 +17,17 @@ export const router=createBrowserRouter([
             {
                 path:'/',
                 element:<Home></Home>,
-                loader:()=>fetch('http://localhost:5000/news')
+                loader:()=>fetch('https://deagon-news-server-alif202020.vercel.app/news')
             },
             {
                 path:'/news/:id',
                 element:<News></News>,
-                loader:({params})=>fetch(`http://localhost:5000/news/${params.id}`)
+                loader:({params})=>fetch(`https://deagon-news-server-alif202020.vercel.app/news/${params.id}`)
             },
             {
                 path:'/catagores/:id',
                 element:<Catagores></Catagores>,
-                loader:({params})=>fetch(`http://localhost:5000/category/${params.id}`)
+                loader:({params})=>fetch(`https://deagon-news-server-alif202020.vercel.app/category/${params.id}`)
             },
             {
                 path:'/login',
